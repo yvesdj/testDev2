@@ -1,0 +1,6 @@
+<p-panel header="Random Score">
+  <p *ngIf="randomScore">het resultaat van de test is : {{randomScore}} / 10</p>
+  <p *ngIf="randomScore <= 4">Dit resultaat is ondermaats</p>
+  <p *ngIf="randomScore > 4 && randomScore <= 7">&nbsp;</p>
+  <p *ngIf="randomScore > 7">Mooie score !</p>
+</p-panel>

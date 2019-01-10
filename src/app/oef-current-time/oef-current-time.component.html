@@ -1,0 +1,5 @@
+<p-panel header="{{title}}">
+  <p *ngIf="hours > 6 && hours <= 11">Goeie meuregent</p>
+  <p *ngIf="hours >= 18">Ni te zot eh kamer</p>
+  {{datum | date : "H:mm:ss"}}
+</p-panel>
