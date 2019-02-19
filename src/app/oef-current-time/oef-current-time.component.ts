@@ -9,7 +9,7 @@ export class OefCurrentTimeComponent implements OnInit {
 
   title:string = "Current Time";
   datum: Date;
-  hours:number = 19;
+  hours:number;
 
   constructor() { 
     setInterval(this.UpdateDate,1000)

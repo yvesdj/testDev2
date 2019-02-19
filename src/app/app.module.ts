@@ -10,6 +10,7 @@ import {AccordionModule} from 'primeng/accordion';
 import {PanelModule} from 'primeng/panel';
 import {ProgressBarModule} from 'primeng/progressbar';
 
+
 import { CurrentTimeComponent } from './current-time/current-time.component';
 import { OefCurrentTimeComponent } from './oef-current-time/oef-current-time.component';
 import { OefTellerComponent } from './oef-teller/oef-teller.component';
@@ -17,6 +18,7 @@ import { OefRandomGeneratorComponent } from './oef-random-generator/oef-random-g
 import { OefFromStartComponent } from './oef-from-start/oef-from-start.component';
 import { OefRandomScoreComponent } from './oef-random-score/oef-random-score.component';
 import { OefWeatherForecastComponent } from './oef-weather-forecast/oef-weather-forecast.component';
+import { OefPersonenComponent } from './oef-personen/oef-personen.component';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { OefWeatherForecastComponent } from './oef-weather-forecast/oef-weather-
     OefRandomGeneratorComponent,
     OefFromStartComponent,
     OefRandomScoreComponent,
-    OefWeatherForecastComponent
+    OefWeatherForecastComponent,
+    OefPersonenComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,15 @@
-<p>
-  oef-weather-forecast works!
-</p>
+<p-panel header="Weather Forecast">
+  <table>
+    <tr *ngFor="let t of tempArray;let i = index">
+      <td>{{locationArray[i]}}</td>
+      <td>{{t}}</td>
+      <td>
+        <p *ngIf="t == 0">Tgo glad zen ze</p>
+        <p *ngIf="t > 0 && t <= 3">Mss edde chance oem te gon sleje</p>
+        <p *ngIf="t > 17">Teh goei weer e vent</p>
+      </td>
+      <td><img src="https://openweathermap.org/img/w/0{{t % 5}}d.png" alt="dieWeer"></td>
+
+    </tr>
+  </table>
+</p-panel>
